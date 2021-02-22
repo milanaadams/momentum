@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owfont-regular.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="inner">
+        <div class="weekDay"></div>
+        <date class="date"></date>
+        <time class="time"></time>
+        <h1>
+            <span class="greeting"></span>
+            <span class="name" contenteditable="true"></span>
+        </h1>
+
+        <h2>What is your focus for today?</h2>
+        <p class="focus" contenteditable="true"></p>
+        <div class="additional">
+            <div class="weather">
+                <div class="city" contenteditable="true">Minsk</div>
+                <div class="degrees">
+                    <div class="temperature"></div>
+                    <i class="weather-icon owf"></i>
+                </div>
+                <div class="weatherType"></div>
+                <div>Wind speed: <span class="windSpeed"></span></div>
+                <div>Humidity: <span class="humidity"></span></div>
+            </div>
+            <div class="quote">
+            <h3 class="insperation">Inspirational Quote</h3>
+                <blockquote class="quoteText"></blockquote>
+                <figcaption class="authorName"></figcaption>
+                <button class="nextQuote" type="button">Change Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="nextImage" type="button">Next Image</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s linear;
+    -webkit-transition: background-image 1s linear;
+    -moz-transition: background-image 1s linear;
+    -ms-transition: background-image 1s linear;
+    -o-transition: background-image 1s linear;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-radius: 5%;
+    max-width: 740px;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    font-size: 8rem;
+}
+
+.time span{
+    min-width: 160px;
+}
+
+h1{
+    margin-bottom: 3rem;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+}
+
+.focus{
+    margin-bottom: 0.5rem;
+    min-width: 20px;
+}
+
+.focus:focus{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.date{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.weekDay {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.nextImage{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.7rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.nextQuote{
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.7rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.nextImage:hover, .nextQuote:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.nextImage:focus, .nextQuote:focus{
+    outline: none;
+}
+
+.name {
+    display: block;
+    min-width: 20px;
+}
+
+.name:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.additional{
+    display: flex;
+    margin-top: 100px;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.weather-icon{
+    font-size: 90px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.authorName{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.city{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    min-width: 20px;
+}
+
+.city:focus{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.temperature{
+    font-size: 3rem;
+}
+
+.quoteText{
+    margin: 20px 0;
+    min-height: 90px;
+}
+
+.degrees{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1367px){
+    .time{
+        font-size: 6rem;
+    }
+    
+    .weekday{
+        font-size: 1.5rem;
+    }
+
+    .date{
+        font-size: 2rem;
+    }
+
+    h1{
+        margin-bottom: 2rem;
+    }
+
+    .additional{
+        margin-top: 60px;
+    }
+
+    .temperature {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 767px){
+    body{
+        min-height: 100vh;
+        height: auto;
+    }
+    .inner{
+        margin: 20px 10px;
+    }
+    .time{
+        font-size: 5rem;
+    }
+
+    .time span{
+        min-width: 100px;
+    }
+
+    .additional{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nextImage{
+        padding: 5px 10px;
+    }
+
+    .quote{
+        margin-top: 30px;
+    }
+
+    .inner{
+        border-radius: 20px    ;
+        -webkit-border-radius: 20px    ;
+        -moz-border-radius: 20px    ;
+        -ms-border-radius: 20px    ;
+        -o-border-radius: 20px    ;
+}
+}
+
+@media(max-width: 600px){
+    body{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 18px;
+
+    }
+    .time{
+        font-size: 3rem;
+    }
+
+    .time span{
+        min-width: 65px;
+    }
+    .inner{
+        margin: 40px 10px;
+        width: 90%;
+        max-width: 90%;
+    }
+    .additional{
+        width: 100%;
+    }
+
+    .quote{
+        width: 100%;
+    }
+    .quoteText{
+        width: 100%;
+    }
+
+    .weather{
+        width: 100%;
+    }
+
+}
